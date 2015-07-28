@@ -1,0 +1,20 @@
+//
+//  Helper.pch
+//  DummyWizni
+//
+//  Created by arvind rawat on 27/07/15.
+//  Copyright (c) 2015 rwin. All rights reserved.
+//
+
+#ifndef DummyWizni_Helper_pch
+#define DummyWizni_Helper_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "HelperMacros.h"
+#import "Constants.h"
+#import "CommonUtilities.h"
+#import "Logging.h"
+#import <QuartzCore/QuartzCore.h>
+#endif
