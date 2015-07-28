@@ -91,6 +91,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ehX-53-b8w">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CdD-fM-qRV">
                             <size key="itemSize" width="600" height="300"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -171,7 +172,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="sxd-h5-m84" secondAttribute="trailing" constant="50" id="6tr-1h-CLK"/>
                                     <constraint firstItem="sxd-h5-m84" firstAttribute="top" secondItem="7oQ-id-T0Y" secondAttribute="bottom" constant="5" id="7s5-MG-sP8"/>
@@ -306,7 +307,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Hct-ba-0Ab" secondAttribute="trailing" constant="50" id="3eo-VT-lHP"/>
                                     <constraint firstItem="TRk-4w-s3A" firstAttribute="top" secondItem="X12-Yv-EpG" secondAttribute="bottom" constant="6" id="671-7Q-ujt"/>
@@ -378,7 +379,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YFI-GT-0CJ">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YFI-GT-0CJ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
@@ -387,7 +388,7 @@
                                     <outlet property="delegate" destination="ZZ7-WN-31c" id="k2I-CO-9mx"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHZ-JN-Edz">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHZ-JN-Edz">
                                 <rect key="frame" x="288" y="940" width="115" height="30"/>
                                 <state key="normal" title="Current Location">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>

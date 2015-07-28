@@ -66,18 +66,18 @@
 		BADB29331B67A959009E28A0 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
 		BADB29361B67A959009E28A0 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		BADB29371B67A959009E28A0 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
-		BADB29421B67AA45009E28A0 /* AddressCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressCollectionViewCell.h; path = Controller/AddressCollectionViewCell.h; sourceTree = "<group>"; };
-		BADB29431B67AA45009E28A0 /* AddressCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressCollectionViewCell.m; path = Controller/AddressCollectionViewCell.m; sourceTree = "<group>"; };
-		BADB29441B67AA45009E28A0 /* EmployeeCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmployeeCellTableViewCell.h; path = Controller/EmployeeCellTableViewCell.h; sourceTree = "<group>"; };
-		BADB29451B67AA45009E28A0 /* EmployeeCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmployeeCellTableViewCell.m; path = Controller/EmployeeCellTableViewCell.m; sourceTree = "<group>"; };
+		BADB29421B67AA45009E28A0 /* AddressCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressCollectionViewCell.h; path = ../Controller/AddressCollectionViewCell.h; sourceTree = "<group>"; };
+		BADB29431B67AA45009E28A0 /* AddressCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressCollectionViewCell.m; path = ../Controller/AddressCollectionViewCell.m; sourceTree = "<group>"; };
+		BADB29441B67AA45009E28A0 /* EmployeeCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmployeeCellTableViewCell.h; path = ../Controller/EmployeeCellTableViewCell.h; sourceTree = "<group>"; };
+		BADB29451B67AA45009E28A0 /* EmployeeCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmployeeCellTableViewCell.m; path = ../Controller/EmployeeCellTableViewCell.m; sourceTree = "<group>"; };
 		BADB29461B67AA45009E28A0 /* EmployeeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeCollectionViewController.h; sourceTree = "<group>"; };
 		BADB29471B67AA45009E28A0 /* EmployeeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeCollectionViewController.m; sourceTree = "<group>"; };
 		BADB29481B67AA45009E28A0 /* EmployeeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeListViewController.h; sourceTree = "<group>"; };
 		BADB29491B67AA45009E28A0 /* EmployeeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeListViewController.m; sourceTree = "<group>"; };
 		BADB294A1B67AA45009E28A0 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		BADB294B1B67AA45009E28A0 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		BADB294C1B67AA45009E28A0 /* PersonalInfoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonalInfoCollectionViewCell.h; path = Controller/PersonalInfoCollectionViewCell.h; sourceTree = "<group>"; };
-		BADB294D1B67AA45009E28A0 /* PersonalInfoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonalInfoCollectionViewCell.m; path = Controller/PersonalInfoCollectionViewCell.m; sourceTree = "<group>"; };
+		BADB294C1B67AA45009E28A0 /* PersonalInfoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonalInfoCollectionViewCell.h; path = ../Controller/PersonalInfoCollectionViewCell.h; sourceTree = "<group>"; };
+		BADB294D1B67AA45009E28A0 /* PersonalInfoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonalInfoCollectionViewCell.m; path = ../Controller/PersonalInfoCollectionViewCell.m; sourceTree = "<group>"; };
 		BADB295D1B67BB31009E28A0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BADB295F1B67C402009E28A0 /* ValidationRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationRegex.h; sourceTree = "<group>"; };
 		BADB29601B67C402009E28A0 /* ValidationRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationRegex.m; sourceTree = "<group>"; };
@@ -175,12 +175,6 @@
 				BADB29411B67AA45009E28A0 /* Controller */,
 				BADB294E1B67AA45009E28A0 /* Model */,
 				BADB294F1B67AA45009E28A0 /* View */,
-				BADB29421B67AA45009E28A0 /* AddressCollectionViewCell.h */,
-				BADB29431B67AA45009E28A0 /* AddressCollectionViewCell.m */,
-				BADB29441B67AA45009E28A0 /* EmployeeCellTableViewCell.h */,
-				BADB29451B67AA45009E28A0 /* EmployeeCellTableViewCell.m */,
-				BADB294C1B67AA45009E28A0 /* PersonalInfoCollectionViewCell.h */,
-				BADB294D1B67AA45009E28A0 /* PersonalInfoCollectionViewCell.m */,
 			);
 			name = ModuleName;
 			path = Module;
@@ -209,6 +203,12 @@
 		BADB294F1B67AA45009E28A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BADB29421B67AA45009E28A0 /* AddressCollectionViewCell.h */,
+				BADB29431B67AA45009E28A0 /* AddressCollectionViewCell.m */,
+				BADB29441B67AA45009E28A0 /* EmployeeCellTableViewCell.h */,
+				BADB29451B67AA45009E28A0 /* EmployeeCellTableViewCell.m */,
+				BADB294C1B67AA45009E28A0 /* PersonalInfoCollectionViewCell.h */,
+				BADB294D1B67AA45009E28A0 /* PersonalInfoCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
