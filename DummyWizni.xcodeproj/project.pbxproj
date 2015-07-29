@@ -31,6 +31,8 @@
 		BADB295E1B67BB31009E28A0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADB295D1B67BB31009E28A0 /* QuartzCore.framework */; };
 		BADB29611B67C402009E28A0 /* ValidationRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = BADB29601B67C402009E28A0 /* ValidationRegex.m */; };
 		BADB29621B67C402009E28A0 /* ValidationRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = BADB29601B67C402009E28A0 /* ValidationRegex.m */; };
+		BAF9AF2D1B6915BD000C4D95 /* LocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF9AF2C1B6915BD000C4D95 /* LocationHandler.m */; };
+		BAF9AF2E1B6915BD000C4D95 /* LocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF9AF2C1B6915BD000C4D95 /* LocationHandler.m */; };
 		BAFEE7AF1B1EE8F500FB7723 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFEE7AE1B1EE8F500FB7723 /* main.m */; };
 		BAFEE7B21B1EE8F500FB7723 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFEE7B11B1EE8F500FB7723 /* AppDelegate.m */; };
 		BAFEE7B51B1EE8F600FB7723 /* DummyWizni.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAFEE7B31B1EE8F500FB7723 /* DummyWizni.xcdatamodeld */; };
@@ -81,6 +83,8 @@
 		BADB295D1B67BB31009E28A0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BADB295F1B67C402009E28A0 /* ValidationRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationRegex.h; sourceTree = "<group>"; };
 		BADB29601B67C402009E28A0 /* ValidationRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationRegex.m; sourceTree = "<group>"; };
+		BAF9AF2B1B6915BD000C4D95 /* LocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationHandler.h; sourceTree = "<group>"; };
+		BAF9AF2C1B6915BD000C4D95 /* LocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHandler.m; sourceTree = "<group>"; };
 		BAFEE7A91B1EE8F400FB7723 /* DummyWizni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DummyWizni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFEE7AD1B1EE8F500FB7723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAFEE7AE1B1EE8F500FB7723 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				BADB292A1B6763F5009E28A0 /* CommonUtilities.m */,
 				BADB295F1B67C402009E28A0 /* ValidationRegex.h */,
 				BADB29601B67C402009E28A0 /* ValidationRegex.m */,
+				BAF9AF2B1B6915BD000C4D95 /* LocationHandler.h */,
+				BAF9AF2C1B6915BD000C4D95 /* LocationHandler.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 				BADB29541B67AA45009E28A0 /* EmployeeCollectionViewController.m in Sources */,
 				BADB29561B67AA45009E28A0 /* EmployeeListViewController.m in Sources */,
 				BADB293E1B67A959009E28A0 /* Employee.m in Sources */,
+				BAF9AF2D1B6915BD000C4D95 /* LocationHandler.m in Sources */,
 				BADB29501B67AA45009E28A0 /* AddressCollectionViewCell.m in Sources */,
 				BADB295A1B67AA45009E28A0 /* PersonalInfoCollectionViewCell.m in Sources */,
 				BADB29611B67C402009E28A0 /* ValidationRegex.m in Sources */,
@@ -416,6 +423,7 @@
 				BADB293F1B67A959009E28A0 /* Employee.m in Sources */,
 				BADB29531B67AA45009E28A0 /* EmployeeCellTableViewCell.m in Sources */,
 				BADB293B1B67A959009E28A0 /* Address.m in Sources */,
+				BAF9AF2E1B6915BD000C4D95 /* LocationHandler.m in Sources */,
 				BAFEE7CF1B1EE8F900FB7723 /* DummyWizniTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

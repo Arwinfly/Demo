@@ -17,6 +17,8 @@
 #import "MapViewController.h"
 #import "ValidationRegex.h"
 
+#import "LocationHandler.h"
+
 @interface EmployeeCollectionViewController ()
 {
     UITextField *activeField;
@@ -288,93 +290,28 @@ static NSString * const reuseIdentifierPersonalInfo = @"PersonalInfoCell";
 
 -(IBAction)callCurrentLocation:(id)sender
 {
-    
     if (NewEmployeeBool||IsUpdating ){
-        // ** Don't forget to add NSLocationWhenInUseUsageDescription in MyApp-Info.plist and give it a string
         
-        self.locationManager = [[CLLocationManager alloc] init];
-        self.locationManager.delegate = self;
-        // Check for iOS 8. Without this guard the code will crash with "unknown selector" on iOS 7.
-        if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-            [self.locationManager requestWhenInUseAuthorization];
-        }
-        [self.locationManager startUpdatingLocation];
-        _geocoder = [[CLGeocoder alloc] init];
-
+        [[LocationHandler sharedLocationHandler] callCurrentLocation:^(id dict){
+            
+           NSMutableDictionary *dictionary =[NSMutableDictionary new];
+            dictionary= (NSMutableDictionary *)dict;
+            LogTrace(@"it is called");
+         AddressCollectionViewCell *cell = (AddressCollectionViewCell*) [self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
+        cell.lattitude.text= [dictionary valueForKey:@"lattitude"];
+        cell.longitude.text= [dictionary valueForKey:@"longitudeUser"];
+        cell.streetName.text= [dictionary valueForKey:@"street"];
+        cell.cityName.text= [dictionary valueForKey:@"city"];
+        cell.CountryName.text= [dictionary valueForKey:@"country"];
+            
+        }];
+       
     }
     else{
         [self performSegueWithIdentifier:SHOW_MAP_SEGUE sender:nil];
     }
 }
 
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
-{
-    NSLog(@"didFailWithError: %@", error);
-    UIAlertView *errorAlert = [[UIAlertView alloc]
-                               initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [errorAlert show];
-}
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
-{
-    NSLog(@"didUpdateToLocation: %@", newLocation);
-    CLLocation *currentLocation = newLocation;
-    
-    if (currentLocation != nil)
-    {
-        NSLog(@"Arv Lat :%@", [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.longitude]);
-        NSLog(@"Arv Long:%@", [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude]);
-    }
-    
-    [[NSUserDefaults standardUserDefaults]setValue:[NSString stringWithFormat:@"%f",newLocation.coordinate.latitude] forKey:@"Latitude"];
-    [[NSUserDefaults standardUserDefaults]setValue:[NSString stringWithFormat:@"%f",newLocation.coordinate.longitude] forKey:@"Longitude"];
-    
-    // Get addres by geocoding
-    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
-    [geocoder reverseGeocodeLocation:newLocation completionHandler:^(NSArray *placemarks, NSError *error)
-      {
-        
-          
-         if (error == nil && [placemarks count] > 0)
-         {
-             
-             AddressCollectionViewCell *cell = (AddressCollectionViewCell*) [self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
-             
-             cell.lattitude.text= [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude];
-             cell.longitude.text= [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.longitude];
-             
-             
-             CLPlacemark *placemark = [placemarks lastObject];
-             // strAdd -> take bydefault value nil
-             NSString *strAdd = nil;
-             if ([placemark.subThoroughfare length] != 0)
-                 strAdd = placemark.subThoroughfare;
-             
-             if ([placemark.thoroughfare length] != 0)
-             {
-                 cell.streetName.text=placemark.thoroughfare;
-             }
-             if ([placemark.administrativeArea length] != 0)
-             {
-                 cell.cityName.text=placemark.administrativeArea;
-             }
-             if ([placemark.country length] != 0)
-             {
-                 cell.CountryName.text=placemark.country;
-             }
-             
-         }
-    }];
-    
-    [self stopLocationActivity];
-}
-
-- (void)stopLocationActivity
-{
-    [self.locationManager stopUpdatingLocation];
-    self.locationManager .delegate = nil;
-    
-}
 
 
 //*************************

@@ -75,7 +75,7 @@
     
 }
 
-//Drop PinAt Particular Lat Long and set it
+//Drop Pin at Particular Lat Long and set it
 -(void)setLatLongAndDropPinAtParticularPlace :( CLLocationCoordinate2D )coord
 {
     

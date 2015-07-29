@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 rwin. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #ifndef DummyWizni_HelperMacros_h
 #define DummyWizni_HelperMacros_h
 
@@ -24,5 +25,11 @@
 #define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
 #define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
 #define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+
+
+
+typedef void (^callBackBlock)(id);
+
 
 #endif
